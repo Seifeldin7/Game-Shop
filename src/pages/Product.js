@@ -37,6 +37,7 @@ class Product extends Component {
   }
   addToCart = product => {
     this.props.addToCart(product, this.state.quantity);
+    alert("Game Added to Cart");
   };
   render() {
     if (this.state.loading) {
@@ -99,7 +100,7 @@ class Product extends Component {
                 className="btn btn-primary btn-lg btn-block"
                 onClick={() => this.addToCart(product)}
               >
-                Add to chart
+                Add to cart
               </button>
             </div>
           </div>

@@ -3,9 +3,9 @@ import Carousel from "../components/Carousel";
 import ProductItem from "../components/ProductItem.js";
 import { getAll as getAllProducts } from "../api/Products";
 import "./Products.css";
-import one from "../assets/images/uncharted.jpg";
-import two from "../assets/images/uncharted.jpg";
-import three from "../assets/images/uncharted.jpg";
+import one from "../assets/images/war.jpg";
+import two from "../assets/images/ac.jpg";
+import three from "../assets/images/batman.jpg";
 
 class Products extends Component {
   constructor(props) {

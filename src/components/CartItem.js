@@ -10,7 +10,7 @@ class CartItem extends Component {
       <div>
         <div className="col mb-4">
           <div className="card" style={{color: "white"}}>
-          <div class="card-horizontal">
+          <div className="card-horizontal">
             <img src={product.image} alt="game" className="fit-image"/>
             <div className="card-body" style={{backgroundColor: "#2E3B45"}}>
               <h5 className="card-title">{product.name}</h5>

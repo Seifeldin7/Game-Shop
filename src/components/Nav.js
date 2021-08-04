@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import CartIcon from "./CartIcon";
+import icon from "../assets/images/icon.png";
 class Nav extends Component {
   render() {
     return (
@@ -12,7 +13,7 @@ class Nav extends Component {
           <div className="container-sm">
             <Link className="navbar-brand" to="/">
               <img
-                src={""}
+                src={icon}
                 width="30px"
                 height="30px"
                 className="d-inline-block align-top"

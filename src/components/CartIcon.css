@@ -36,12 +36,13 @@
 }
 @media screen and (min-width: 480px){
   .fit-image {
-    max-height: 40vh;
+    height: 32vh;
+    width: 30vh;
   }
 }
 @media screen and (max-width: 480px){
   .fit-image {
     max-height: 48vh;
-    max-width: 20vh;
+    width: 20vh;
   }
 }

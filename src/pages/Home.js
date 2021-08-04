@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import one from "../assets/images/uncharted.jpg";
-import two from "../assets/images/uncharted.jpg";
-import three from "../assets/images/uncharted.jpg";
+import one from "../assets/images/batman.jpg";
+import two from "../assets/images/ac.jpg";
+import three from "../assets/images/war.jpg";
 import Carousel from "../components/Carousel";
 
 class Home extends Component {

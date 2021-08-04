@@ -20,10 +20,10 @@ class CartIcon extends Component {
 
 const mapStateToProps = state => {
   return {
-    totalQuantity: state.cart.reduce(
+    totalQuantity: state.cart? state.cart.reduce(
       (total, item) => total + parseInt(item.quantity),
       0
-    )
+    ) : 0
   };
 };
 export default connect(mapStateToProps)(CartIcon);

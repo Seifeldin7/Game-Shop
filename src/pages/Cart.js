@@ -19,7 +19,7 @@ class Cart extends Component {
             <i className="fa fa-shopping-cart cart"></i> Your Bag
           </h1>
           <div className="row row-cols-1">
-            {this.props.cartItems.map((item, index) => (
+            {this.props.cartItems?.map((item, index) => (
               <CartItem item={item} index={index} key={index} />
             ))}
           </div>
@@ -42,10 +42,10 @@ class Cart extends Component {
 const mapStateToProps = state => {
   return {
     cartItems: state.cart,
-    total: state.cart.reduce(
+    total: state.cart? state.cart.reduce(
       (total, item) => total + item.quantity * item.product.price,
       0
-    )
+    ) : 0
   };
 };
 
