@@ -1,0 +1,28 @@
+.products,
+.cart {
+  color: #FFDC11;
+  text-transform: uppercase;
+}
+.price {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.up {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.up-2 {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.up-3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.center {
+  margin-top: 45vh;
+}

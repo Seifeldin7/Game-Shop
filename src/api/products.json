@@ -1,0 +1,42 @@
+[{
+    "id": 1,
+    "name": "Battlefield 1",
+    "price": 100,
+    "image": "/bf1.jpg",
+    "description": "A dark and brooding fantasy adventure awaits players in a vast twisted world full of fearsome beasts, devious traps and hidden secrets."
+  },
+  {
+    "id": 2,
+    "name": "Bloodborne",
+    "price": 150,
+    "image": "/bb.jpg",
+    "description": "A dark and brooding fantasy adventure awaits players in a vast twisted world full of fearsome beasts, devious traps and hidden secrets."
+  },
+  {
+    "id": 3,
+    "name": "Fifa 22",
+    "price": 120,
+    "image": "/fifa22.jpg",
+    "description": "A dark and brooding fantasy adventure awaits players in a vast twisted world full of fearsome beasts, devious traps and hidden secrets."
+  },
+  {
+    "id": 4,
+    "name": "Dark Souls 3",
+    "price": 170,
+    "image": "/ds.jpg",
+    "description": "A dark and brooding fantasy adventure awaits players in a vast twisted world full of fearsome beasts, devious traps and hidden secrets."
+  },
+  {
+    "id": 5,
+    "name": "The Witcher 3",
+    "price": 110,
+    "image": "/witcher.jpg",
+    "description": "A dark and brooding fantasy adventure awaits players in a vast twisted world full of fearsome beasts, devious traps and hidden secrets."
+  }, {
+    "id": 6,
+    "name": "God of War",
+    "price": 200,
+    "image": "/gow.jpg",
+    "description": "A dark and brooding fantasy adventure awaits players in a vast twisted world full of fearsome beasts, devious traps and hidden secrets."
+  }
+]
