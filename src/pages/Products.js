@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Carousel from "../components/Carousel";
-import ProductItem from "../components/ProductItem.js";
+import Carousel from "../components/carousel";
+import ProductItem from "../components/product/index.js";
 import { getAll as getAllProducts } from "../api/Products";
 import "./Products.css";
 import one from "../assets/images/war.jpg";

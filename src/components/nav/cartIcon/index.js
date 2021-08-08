@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./CartIcon.css";
+import "./styles.css";
 import { connect } from "react-redux";
 class CartIcon extends Component {
   render() {

@@ -1,31 +1,33 @@
 import React, { Component } from "react";
-import CartItem from "../components/CartItem.js";
+import CartItem from "../components/cart-item/index.js";
 import "./Products.css";
 import { connect } from "react-redux";
 import { clearCart } from "../store/actions/action";
+import { CartContainer } from "../containers/cart";
 
 class Cart extends Component {
   placeOrder = () => {
-    // sent request to the server
-    // clear the cart
     this.props.clearCart();
     alert("We recieved your order, and we are working on it.");
   };
+
   render() {
     return (
-      <div className="container">
-        <React.Fragment>
-          <h1 className="text-center cart up-2">
-            <i className="fa fa-shopping-cart cart"></i> Your Bag
-          </h1>
-          <div className="row row-cols-1">
+      <React.Fragment>
+        <h1 className="text-center cart up-2">
+          <i className="fa fa-shopping-cart cart"></i> Your Bag
+        </h1>
+        {/* <div className="row row-cols-1">
             {this.props.cartItems?.map((item, index) => (
               <CartItem item={item} index={index} key={index} />
             ))}
-          </div>
+          </div> */}
+        <CartContainer items={this.props.cartItems} />
 
-          <h1 style={{color: "white"}}>
-            <i className="fa fa-money blue"></i> CART TOTAL  : ${this.props.total}
+        <div className="container">
+          <h1 style={{ color: "white" }}>
+            <i className="fa fa-money blue"></i> CART TOTAL : $
+            {this.props.total}
           </h1>
           <button
             type="button"
@@ -34,24 +36,26 @@ class Cart extends Component {
           >
             CHECKOUT
           </button>
-        </React.Fragment>
-      </div>
+        </div>
+      </React.Fragment>
     );
   }
 }
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     cartItems: state.cart,
-    total: state.cart? state.cart.reduce(
-      (total, item) => total + item.quantity * item.product.price,
-      0
-    ) : 0
+    total: state.cart
+      ? state.cart.reduce(
+          (total, item) => total + item.quantity * item.product.price,
+          0
+        )
+      : 0,
   };
 };
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    clearCart: () => dispatch(clearCart())
+    clearCart: () => dispatch(clearCart()),
   };
 };
 

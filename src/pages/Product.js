@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { getById as getSpecificProduct } from "../api/Products";
-import Loading from "../components/Loading";
+import Loading from "../components/loading";
 import { addToChart } from "../store/actions/action";
 import { connect } from "react-redux";
 class Product extends Component {
